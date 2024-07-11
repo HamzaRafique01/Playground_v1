@@ -52,7 +52,7 @@ class Filters {
         this.availabilityFilterLocator = page.locator('#mz-filter-panel-0-3').getByText('');
         this.sizeFilterLocator = page.locator('#mz-filter-panel-0-4').getByText('');
         this.discountFilterLocator = page.locator('#mz-filter-panel-0-5 div').filter({ hasText: '' }).nth(2);
-        this.manufacturerFilterLocator = page.locator('#mz-filter-panel-0-1').getByText('');
+        this.manufacturerFilterLocator = page.locator('#mz-filter-panel-0-1').getByText('')
         this.listview = page.locator('//button[@data-original-title="List"]');
         this.gridview = page.locator('//button[@data-original-title="Grid"]');
         this.productComparisonLinkLocator = this.page.locator('//a[contains(@href, "compare")]');
@@ -318,11 +318,13 @@ class Filters {
     }
     async checkManufacturerProducts(manufacturer) {
         
-        await this.page.locator('#mz-filter-content-0').getByText('Manufacturer');
+        await this.showmore.isVisible();
         await this.showmore.click();
-
+        console.log('Show More Items button found and clicked successfully');
+        await this.manufacturerFilterLocator.getByText(manufacturer).isVisible();
         await this.manufacturerFilterLocator.getByText(manufacturer).click();
-        console.log('Product size selected successfully.....'+manufacturer);
+        console.log('User successfully selected the menufacturer'+ manufacturer);
+
 
     }
 

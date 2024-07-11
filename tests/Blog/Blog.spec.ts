@@ -1,7 +1,7 @@
 import { test, expect, chromium, Browser, Page, BrowserContext } from '@playwright/test';
-import Apple_func from '../../.github/Pages/MegaMenu/Apple_functional';
-import Filters from '../../.github/Pages/Common_Module/Filters';
-import Blog from '../../.github/Pages/Blog/blog'
+import Apple_func from '../../.github/Page/MegaMenu/Apple_functional';
+import Filters from '../../.github/Page/Common_Module/Filters';
+import Blog from '../../.github/Page/Blog/Blog'
 
 
 
