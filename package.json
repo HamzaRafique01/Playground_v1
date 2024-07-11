@@ -1,0 +1,23 @@
+{
+  "name": "playground_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamzaRafique01/Playground_v1.git"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamzaRafique01/Playground_v1/issues"
+  },
+  "homepage": "https://github.com/HamzaRafique01/Playground_v1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10"
+  }
+}
