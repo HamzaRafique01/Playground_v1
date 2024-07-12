@@ -1,9 +1,9 @@
 import { test, expect, chromium, Browser, Page, BrowserContext } from '@playwright/test';
-import Filters from '../.github/Pages/Common_Module/Filters';
-import Wishlist from '../.github/Pages/Wishlist';
-import Login from '../.github/Pages/Login/Login';
-import Apple_func from '../.github/Pages/MegaMenu/Apple_functional'
-import Loginsingleuser from '../TestData/logindatawithsingleuser';
+import Filters from '../../.github/Page/Common_Module/Filters';
+import Wishlist from '../../.github/Page/Wishlist/Wishlist';
+import Login from '../../.github/Page/Login/Login';
+import Apple_func from '../../.github/Page/MegaMenu/Apple_functional'
+import Loginsingleuser from '../../Test_Data/logindatawithsingleuser';
 
 test.describe('Verify Mega Menu > Apple Page All Scenarios', () => {
   let browser: Browser;
@@ -77,7 +77,6 @@ test.describe('Verify Mega Menu > Apple Page All Scenarios', () => {
     await wishlist.hoverProduct();
 
     //Add Product to wishlist
-    // const productname = 'iMac';
     await wishlist.addOnWishlist();
 
     
